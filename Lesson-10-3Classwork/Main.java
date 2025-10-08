@@ -40,6 +40,14 @@ double groupSavings(int tickets){
         of beans: $25 savings
         Otherwise: $0 savings.
     */
+double groceryDiscount(double amt, int cans){
+
+      if(amt>=100&&amt<=200 && cans>=3)
+        return 10;
+      else if(amt>200 && cans>4)
+        return 25;
+      else
+        return 0;
 
 
 }
