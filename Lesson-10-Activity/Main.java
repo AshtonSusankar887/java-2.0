@@ -10,7 +10,7 @@ class Main {
    System.out.println(gpa(93));
    System.out.println(gpa(70));
 
-    if( isGraduating(12,45) )
+    if( isGraduating(12,45))
       System.out.println("Student is graduating");
     else
       System.out.println("Student is not graduating");
@@ -52,7 +52,7 @@ double gpa(double RAWGPA){
     else if(bmi>=18.5 && bmi <=24.9)
       return "Normal";
     else if(bmi<39.9 && bmi>=25)
-      return "Overwe ight";
+      return "Overweight";
     else if(bmi>=40)
       return "Obese";
     else
