@@ -31,7 +31,7 @@ class Main {
 }
    
 double gpa(double RAWGPA){
- if(RAWGPAGPA > 90)
+ if(RAWGPA > 90)
       return RAWGPA * 1.1;
     else
       return RAWGPA;
@@ -69,6 +69,7 @@ double shippingCost(double wgt){
     else
       return 10+(wgt-25)*0.02;
   }
+
 boolean blueOrViolet(int freq){
     if(freq>=600 && freq<=670 || freq>=700 && freq<=750)
       return true;
