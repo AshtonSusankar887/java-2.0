@@ -15,10 +15,10 @@ class Main {
   
   String creditCardType(String num){
     if(num.substring(0,1).equals("4"))
-      return "American Express";
+      return "Visa";
     else if (num.substring(0,2).equals("34") ||
              num.substring(0,2).equals("37"))
-      return "Visa";
+      return "America Express";
     else if (num.substring(0,2).equals("51") ||
              num.substring(0,2).equals("55"))
       return "Mastercard";
