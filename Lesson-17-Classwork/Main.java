@@ -17,7 +17,6 @@ class Main {
     
   }
 
-  //will use reverse for problem 3
   String reverse(String s){
     String bld="";
     for(int x=s.length()-1; x>=0; x--)
@@ -47,8 +46,6 @@ class Main {
     for(int x=0; x<=first.length()-1;x++)
       bld+=first.substring(x,x+1) +second.substring(x,x+1);
       
-    //if string is odd length we have to add the last 
-    //letter of second string
     if(s.length()%2==1)
       bld+= second.substring(second.length()-1);
     return bld;
@@ -65,9 +62,10 @@ class Main {
       bld+=fHalf.substring(x,x+1);
       bld+=sHalf.substring(x,x+1);
     }
-    //If we have odd number of characters add the last 
-    // character of the sHalf to the end of bld string
+    
     if(len%2==1)
       bld+=sHalf.substring(sHalf.length()-1);
     return bld;
   }
+  
+}
