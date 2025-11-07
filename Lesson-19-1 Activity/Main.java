@@ -1,5 +1,4 @@
 class Main {
-
   public static void main(String[] args) {
     (new Main()).init();
   }
@@ -20,14 +19,11 @@ class Main {
     print( mathQuiz() );
   }
 
-  //1
-  int rollDice(){
+int rollDice(){
 
     int dice1=(int)(Math.random()*6+1);
     return dice1;
-  }
-
-  //2
+  }  
   String lotto(){
     String result ="";
     for(int x=1; x<=5;x++)
@@ -36,8 +32,7 @@ class Main {
     return result;
   }
 
-  //3
-  void diceDistribution(int N){
+ void diceDistribution(int N){
     int d1=0,d2=0,d3=0,d4=0,d5=0,d6=0;
     for(int x=0;x<N; x++){
       int roll = (int)(Math.random()*(6)+1);
@@ -61,9 +56,7 @@ class Main {
     print("roll of 5: "+d5);
     print("roll of 6: "+d6);
   }
-
-  //4
-  String additionTutor(){
+String additionTutor(){
     int n1 = (int)(Math.random()*(100-(-100)+1)+(-100));
     int n2 = (int)(Math.random()*(100-(-100)+1)+(-100));
     print("what is the answer to the question:");
