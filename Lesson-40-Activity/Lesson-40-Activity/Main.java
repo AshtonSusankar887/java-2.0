@@ -37,7 +37,11 @@ sql = "Select * FROM cr101" +
 "Where teacher1 ='PORCHETTA' AND period=10";
 queryResult = db,runSQL(sql."table-auto");
 print(queryResult);
-   
+
+//4 
+sql = "Select Distinct studentid FROM cr101" ;
+queryResult = db,runSQL(sql."table-auto");
+print(queryResult);   
 
     
 
